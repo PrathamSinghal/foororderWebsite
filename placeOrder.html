@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+</head>
+<body>
+
+
+    <!-- ****************header part starts****************** -->
+    
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container p-1">
+                <div class="navbar-logo">
+                    <img src="./assets/biporderlogo.png" alt="biporderlogo">
+                    <a class="navbar-brand text-white" href="./index.html">biPOrder</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-adjust-ul ml-auto col-xl-4 col-lg-4">
+                        <!-- Button trigger modal -->
+                        <li class="nav-item active" data-toggle="modal" data-target="#exampleModalCenterSignUp">
+                            <a class="nav-link navigation-adjust" href="#" >
+                                <i class="fa fa-user-circle  mr-0"></i>
+                                <span class="nav-link-inner--text">Sign up</span>
+                                <!-- SignUp<span class="sr-only">(current)</span> -->
+                            </a>
+                        </li>
+                        <!-- Button trigger modal -->
+                        <li class="nav-item" data-toggle="modal" data-target="#exampleModalCenterLogin">
+                            <a class="nav-link navigation-adjust" href="#">        
+                                <i class="fa fa-user-circle mr-0"></i>
+                                <span class="nav-link-inner--text">Login</span>
+                            </a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation-adjust" href="./page2.html">             
+                                <i class="fa fa-shopping-cart mr-0"></i>
+                                <span class="nav-link-inner--text">Cart</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="header-section simpleheader">
+                <div class="container pt-2">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12 p-1">
+                            <div class="right-panel-food-details-card simple-header-card">
+                                <div class="right-panel-food-details-card-image flex items-center justify-center simple-header-image">
+                                    <img src="./assets/CardBurger.png" alt="">
+                                </div>
+                                <div class="right-panel-food-details-card-content simple-header-card-right-panel">
+                                    <div class="right-panel-card-content-heading">
+                                        <h1>Feast and Mishti</h1>
+                                    </div>
+                                    <div class="right-panel-card-content-address simple-header-address">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p>Noida Exressway,Noida Exressway</p>
+                                    </div>
+                                    <div class="right-panel-card-content-buttons simple-header-card-rating">
+
+                                        <div class="flex-for-mobile-first">
+                                            <div class="simple-header-rating">
+                                                <div class="rating d-flex flex-row">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <h6>4.2</h6>
+                                                </div>
+                                                <p>Too Few Ratings</p>
+                                            </div>
+                                            <div class="simple-header-time">
+                                                <h6>27 min</h6>
+                                                <p>Delivery Time</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-for-mobile-second">
+                                            <div class="simple-header-min-order">
+                                                <h6>£15</h6>
+                                                <p>Min. Order</p>
+                                            </div>
+                                            <div class="simple-header-opening-hours">
+                                                <h6>9:00 AM - 10:00 PM</h6>
+                                                <p>Today's Opening Hours</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 p-1">
+                            <div class="simple-header-right-card-content">
+                                <div class="right-panel-card-content-heading ml-2">
+                                    <h1>Offer</h1>
+                                </div>
+                                <div class="simple-header-right-card-heading simple-header-address ml-2">
+                                    <p>
+                                        20% off up to £100 on orders 
+                                    </p>
+                                    <p>
+                                        above £400 Use code JUMBO
+                                    </p>
+                                </div>
+                                <div class="simple-header-right-card-social-links ml-2">
+                                    <ul class="d-flex mb-0">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+    </div>
+
+
+    <!-- *******************modal sign up starts********************* -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenterSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-header" id="exampleModalLongTitle">
+                            <div class="get-started-modal-header">
+                                Let's get started! 
+                                <a href="">
+                                    Food Order
+                                </a>
+                            </div>
+                            <div class="signUp-modal-header">
+                                <a href="#">
+                                    Sign Up
+                                </a>
+                                for Delicious Food and Great Offers.
+                            </div>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>   
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">+91</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Your Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <!-- <div class="input-group mb-3">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                                <input type="text" class="form-control" placeholder="Your Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+                            </div> -->
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email Address">
+                            </div>
+                            <div class="form-group">
+                                  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Your Password">
+                            </div>
+                            <div class="form-group">
+                                  <input type="password" class="form-control" id="inputPassword" placeholder="Confirm Your Password">
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#">
+                            <button type="button" class="btn btn-block">Create Account</button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="btn btn-block">Sign In</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- *******************modal sign up ends********************* -->
+
+    <!-- *******************modal Login Starts********************* -->        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-header" id="exampleModalLongTitle">
+                            <div class="get-started-modal-header">
+                                Welcome Back! 
+                                <a href="">
+                                    Food Order
+                                </a>
+                            </div>
+                            <div class="signUp-modal-header">
+                                Taste Delicious Food,
+                                <a href="#">
+                                    Sign In
+                                </a>
+                                to your account.
+                            </div>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>   
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email/Phone">
+                            </div>
+                            <div class="form-group">
+                                  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Your Password">
+                            </div>
+                            <div class="check-password-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Keep me logged in</label>
+                                  </div>
+                                  <div class="forgot-password">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-block bg-white">Forgot Password</button>
+                                    </a>
+                                  </div>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#">
+                            <button type="button" class="btn btn-block">Login</button>
+                        </a>
+                        <a href="#">
+                            <button type="button" class="btn btn-block">Create Account</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- *******************modal Login ends********************* -->
+
+    <!-- *********header part ends*********** -->
+
+
+    <!-- ************place-order-module-starts********* -->
+        <div class="place-order">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 p-0 m-0">
+                        <div class="address-card">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title modal-title-header address-card-modal-header" id="exampleModalLongTitle">
+                                        <div class="pb-1 pt-1">
+                                            Delivery Address
+                                        </div>
+                                    </h5>
+                                    <button type="button" class="close address-card-modal-header-button">
+                                        <span aria-hidden="true">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </span>
+                                    </button>   
+                                </div>
+                                <div class="address-card-body">
+                                    <div class="address-card-body-home">
+                                        Home
+                                    </div>
+                                    <div class="address-card-body-address">
+                                        247 Whitechapel Road,Whitechapel
+                                    </div>
+                                    <div class="address-card-body-time">
+                                        35 mins
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-card">
+                            <div class="modal-content">
+                                <div class="modal-header payment-card-modal-header">
+                                    <h5 class="modal-title modal-title-header address-card-modal-header" id="exampleModalLongTitle">
+                                        <div class="pb-1 pt-1">
+                                            Choose Payment Method
+                                        </div>
+                                    </h5>  
+                                </div>
+                                <div class="address-card-body">
+                                    <div class="payment-card-buttons w-100">
+                                        <button type="button" class="btn btn-primary btn-block mt-0">Credit</button>
+                                        <button type="button" class="btn btn-primary btn-block mt-0 mr-2 ml-2">Credit/Debit Card</button>
+                                        <button type="button" class="btn btn-primary btn-block mt-0">Paypal</button>
+                                    </div>
+                                    <div class="input-group mt-4 mb-3">
+                                        <input class="form-control border-right-0" placeholder="Card Number">
+                                        <span class="input-group-append bg-white payment-card-input-span">
+                                            <button class="btn border border-left-0" type="button">
+                                                <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="row  mb-3">
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="month" class="form-control border-right-0" id="month" placeholder="Valid Through(MM/YY)">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                          <input type="number" class="form-control" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                    <div class="input-group mt-4 mb-3">
+                                        <input class="form-control border-right-0" placeholder="Name on Card">
+                                        <span class="input-group-append bg-white payment-card-input-span">
+                                            <button class="btn border border-left-0" type="button">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="form-check mb-4 payment-card-checkbox">
+                                        <input class="form-check-input mt-0" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Securely save this card for a faster checkout next time.
+                                        </label>
+                                    </div>
+                                    <div class="payment-card-pay-button">
+                                        <button type="button" class="btn btn-primary">Pay £35</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 p-0 m-0">
+                        <div class="place-order-details">
+                            <div class="order-details">
+                                <div class="order-details-feast-iftar-box">
+                                    <h3>Order Details</h3>
+                                    <div class="feast-iftar-box">
+                                        <div class="feast-iftar-box-heading">
+                                            <div class="feast-iftar-box-food-width">
+                                                <h5>Feast Iftar Box</h5>
+                                            </div>
+                                            <div class="feast-iftar-box-price-width">
+                                                <h5>£72.00</h5>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn">-</button>
+                                                <button type="button" class="btn">1</button>
+                                                <button type="button" class="btn">+</button>
+                                              </div>
+                                        </div>
+                                        <div class="feast-iftar-box-details">
+                                            <div class="col-9 p-0">
+                                                <p>
+                                                    1 Cup Katchi biryani, 1 Cup Chana, 1 Date, 1pc Jilapi, 2pc piazi, 1pc aloo chop, 2pc tandoori wings.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feast-iftar-box">
+                                        <div class="feast-iftar-box-heading">
+                                            <div class="feast-iftar-box-food-width">
+                                                <h5>Feast Iftar Box</h5>
+                                            </div>
+                                            <div class="feast-iftar-box-price-width">
+                                                <h5>£7.00</h5>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn" style="padding: 0rem 2rem;">Add</button>
+                                                <!-- <button type="button" class="btn">1</button>
+                                                <button type="button" class="btn">+</button> -->
+                                              </div>
+                                        </div>
+                                        <div class="feast-iftar-box-details">
+                                            <div class="col-9 p-0">
+                                                <p>
+                                                    1 Cup Katchi biryani, 1 Cup Chana, 1 Date, 1pc Jilapi, 2pc piazi, 1pc aloo chop, 2pc tandoori wings.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <div class="form-group m-0">
+                                    <input type="text" class="form-control" placeholder="FD20201PL">
+                                </div>
+                                <div class="coupon-apply-button">
+                                    <button type="button" class="btn btn-primary">Apply Coupon</button>
+                                </div>
+                            </div>
+                            <div class="bill-details">
+                                <div class="bill-details-box">
+                                    <h3>Bill Details</h3>
+                                    <div class="bill-details-item">
+                                        <p>Item Total</p>
+                                        <p>£24.00</p>
+                                    </div>
+                                    <div class="bill-details-delivery">
+                                        <p>Delivery Fee</p>
+                                        <p>£6.00</p>
+                                    </div>
+                                    <div class="bill-details-taxes">
+                                        <p>Taxes and Charges</p>
+                                        <p>£5.00</p>
+                                    </div>
+                                    <div class="bill-details-total">
+                                        <p>Total</p>
+                                        <p>£25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- ************place-order-module-ends********* -->
+
+
+
+
+
+
+    <!-- **********footer section start*************** -->
+
+    <footer class="footersection pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 p-1">
+                    <div class="box">
+                        <div class="footer-logo">
+                            <!-- <img src="../assets/img/brand/white.png"> -->
+                            <h3>biPOrder</h3>
+                        </div>
+                        <p>Subscribe to our newsletter and get 10% off your first purchase.</p>
+                        <div class="footer-social">
+                            <ul class="d-flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 p-1">
+                    <div class="box">
+                        <div>
+                        <h3>Link</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Indian</a>
+                            </li>
+                            <li>
+                                <a href="#">Bangladeshi</a>
+                            </li>
+                            <li>
+                                <a href="#">Fast Food</a>
+                            </li>
+                            <li>
+                                <a href="#">Thai</a>
+                            </li>
+                            <li>
+                                <a href="#">View all cuisines</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 p-1">
+                    <div class="box">
+                        <div>
+                        <h3>Information</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">London</a>
+                                </li>
+                                <li>
+                                    <a href="#">Newcastle</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rochester</a>
+                                </li>
+                                <li>
+                                    <a href="#">Watford</a>
+                                </li>
+                                <li>
+                                    <a href="#">View all Location</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 p-1">
+                    <div class="box">
+                        <div>
+                    <h3>Quick Contact</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">About US</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact US</a>
+                            </li>
+                            <li>
+                                <a href="#">Restaurant Sign up</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- **********footer section ends*************** -->
+
+    <!-- *************last footer section start*********** -->
+
+    <footer class="copyright d-flex justify-content-around">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        Copyright © 2021 biPOrder . All rights reserved.
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <a href="#">Terms & Conditions |</a>
+                        <a href="#">Privacy Policies</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- *************last footer section ends*********** -->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./index.js"></script>
+<script>
+    $(function() { 
+  $('#sidebarCollapse').on('click', function() {
+    $('#sidebar, #content, #rightBar').toggleClass('active');
+  });
+});
+
+
+</script>
+
+</body>
+</html>

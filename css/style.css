@@ -1,0 +1,2418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{ text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+li { list-style: none; }
+
+p{
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    /* color: #fff; */
+}
+
+
+
+:root {
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+    --main: #FA651D;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+
+.header {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.header-section {
+    background-color: black;
+    height: 31vh;
+    position: relative;
+    width: 100%;
+    background-image: url('../assets/page2background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    
+
+
+}
+.header-section::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: #FFF3E5;
+    /* opacity: 0.1; */
+    z-index: -1;
+    
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: black;
+    /* opacity: 0.1; */
+    z-index: -1;
+    background-color: #F78A1E;
+
+}
+
+.nav-item a {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.center-div p,h1 {
+    margin-bottom: 0;
+}
+
+.nav-link-inner--text {
+    font-size: small;
+}
+
+.navigation-adjust {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation-adjust i {
+    font-size: x-large;
+    padding-right: 0.5rem;
+
+}
+
+.navbar-adjust-ul {
+    justify-content: space-around;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+.navbar-logo a {
+    font-weight: bold;
+ }
+
+
+
+
+
+ @media (max-width:426px){
+     html {
+         font-size: 80%;
+     }
+
+     .mainpage-header-center-div h1 {
+         font-size: 1.5rem !important;
+    }
+
+    .mainpage-header-center-div p {
+        font-size: small !important;
+    }
+
+    .main-container {
+       margin-top: -1rem !important;
+       padding-bottom: 1.5rem !important;
+       padding-top: 1.5rem !important;
+    }
+
+    .main-button-container {
+        padding: 0rem 1.5rem !important;
+    }
+
+    .leaf-container img {
+       width: 20%;
+    }
+
+    .select-cuisine-button-parent-div {
+        padding: 1rem;
+    }
+
+    .four-card-parent-div {
+        margin: 0rem 2rem;
+    }
+
+    .newsletter-heading h5 {
+        font-size: small !important;
+    }
+
+    .payment-container {
+        padding-bottom: 1rem !important;
+        padding-top: 2rem !important;
+    }
+
+    .payment-heading {
+        padding-top: 2rem!important;
+    }
+    .payment-heading h5 {
+        font-size: medium !important;
+    }
+
+    .foodCard-detail-buttons button:first-child {
+        margin-right: 4rem;
+    }
+
+    .card-container-headings h2 {
+        font-size: large;
+    }
+}
+
+
+
+/* ******************section four cards****************** */
+
+
+.card-container-headings h6 {
+    font-family: 'Pacifico', cursive;
+    color: #FD451D;
+}
+
+.card-container-headings h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4A4A4A;
+}
+
+.card-container-headings::after {
+    position: absolute;
+    content: '';
+    left: 49%;
+    width: 36px;
+    height: 0.1rem;
+    border-radius: 2px;
+    background: #FD451D;
+  }
+
+.foodCard-detail-heading {
+    justify-content: space-between;
+}
+
+.card-for-shadow {
+    box-shadow: 0px 0px 4px 0px #8888885e;
+    border-radius: 5px;
+
+}
+.foodCard-detail-heading, .foodCard-detail-para, .foodCard-detail-time, .foodCard-detail-buttons  {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.foodCard-detail-heading {
+    padding-top: 0.3rem;
+}
+
+.foodCard-detail-heading h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+
+}
+
+.foodCard-detail-heading h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+
+.card-rating i {
+    padding-right: 0.3rem;
+    padding-top: 0.1rem;
+}
+
+
+.card-rating i, .card-rating h6 {
+    color: #FD451D;
+    margin: 0;
+}
+
+.foodCard-detail-para p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.79rem;
+    color: #898684;
+}
+
+.foodCard-detail-time {
+    justify-content: space-between;
+}
+
+.foodCard-detail-time h6 {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+}
+
+.foodCard-detail-time h6:first-child {
+    color: #FD451D;
+}
+
+.foodCard-detail-time h6:last-child {
+    color: #737680;
+}
+
+.foodCard-detail-buttons {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 0.6rem;
+
+}
+
+.foodCard-detail-buttons button:first-child {
+    padding: 0rem 3rem;
+    font-size: 1.05rem;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #F8811E;
+    font-weight: 600;
+}
+
+
+.foodCard-detail-buttons button:nth-child(2), .foodCard-detail-buttons button:nth-child(3)  {
+    border: 1px solid #F37476;
+    color: #B0B6C7;
+    background-color: #fff;
+}
+
+
+/* **************Payment Area Start************* */
+
+
+.payment {
+    background-color: black;
+    /* height: 31vh; */
+    position: relative;
+    width: 100%;
+    background-image: url('../assets/paymentBackground.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+
+.payment-heading h5 {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+
+.payment-heading::after {
+    position: absolute;
+    content: '';
+    left: 49%;
+    width: 36px;
+    height: 0.1rem;
+    border-radius: 2px;
+    background: #fff;
+  }
+
+  .payment-container {
+      padding-bottom: 5rem;
+  }
+
+  .payment-visa-image img {
+      width: 50%;
+    }
+    
+  .payment-martercard-image img {
+      width: 25%;
+  }
+
+  .payment-americanexpress-image img {
+      width: 50%;
+  }
+
+
+
+
+
+/* **************Payment Area Ends************* */
+
+
+
+
+
+
+
+
+/* *************newsletter section start********** */
+
+/* .newsletter {
+    height: auto;
+} */
+
+.newsletter-heading h5 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+.newsletter-input input {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    color: #7F868E;
+    background-color: #F6FAF8;
+
+}
+
+.newsletter-input div span {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFEBE6;
+    color: #FD451D;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.newsletter {
+    background-color: black;
+    height: 31vh;
+    position: relative;
+    width: 100%;
+    background-image: url('../assets/newsletterBackImg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+
+/* *************newsletter section ends********** */
+
+
+
+
+/* ***********Footer section start********* */
+
+
+footer {
+    background-color: #FFEAEA;
+}
+
+
+footer .footer-social ul li a i {
+    border: 1px solid #FA651D;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+    background-color: #FA651D;
+    color: white;
+}
+
+footer .footer-social ul li a .fa-facebook::before, footer .footer-social ul li a .fa-pinterest-p::before{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+footer .footer-social ul li {
+    padding: 0.15rem;
+}
+
+
+
+
+
+
+
+
+footer .box ul{
+    list-style-type: none;
+}
+footer .box ul li a{
+    color:var(--footer);
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+footer .box ul li a:hover{
+    color:var(--primary);
+}
+footer .box h3{
+    color:var(--main);
+    margin-bottom:1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+footer .box p{
+    line-height: 1.6;
+    margin-bottom:1rem;
+    color: var(--footer);
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+}
+footer .box ul li{
+    margin-bottom:1rem;
+}
+footer .box{
+    text-align: left;
+    padding-left: 5rem;
+}
+
+@media (max-width:576px){
+     footer .box{
+        padding-left: 2rem;
+    }
+}
+
+footer .box:nth-child(2),footer .box:nth-child(3),footer .box:nth-child(4){
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+footer .box:nth-child(3) > div img{
+    margin-right:1rem;
+}
+
+footer.copyright{
+    padding:1rem 0;
+    background: var(--footer);
+    color:var(--pure);
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer.copyright a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ***********Footer section ends********* */
+
+
+
+
+
+/* ***********carousel section start*********** */
+
+    
+.carousel-indicators {
+    position: inherit !important;
+}
+
+.carousel-indicators li {
+    background-color: black !important;
+}
+
+#carouselExampleIndicators {
+    background-color: black !important;
+
+}
+
+
+.carousel-quote {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-bottom: 0rem;
+}
+
+
+.carousel-quote i {
+    font-size: xx-large;
+    color: #80808029;
+    padding: 0.5rem;
+    padding-bottom: 0rem;
+}
+
+.carousel-quote p {
+    font-size: 0.65rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: black;
+    margin-bottom: 0rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+.carousel-details {
+    background-color: #FD451D;
+    /* margin-top: 1.5rem; */
+    border-radius: 5px;
+}
+
+.carousel-details h4, .carousel-detail h6 {
+    padding-left: 0.1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0rem !important;
+    /* color: white; */
+    padding-top: 0.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+.carousel-details h6 {
+    padding-bottom: 0.6rem;
+    font-style: italic !important;
+    color: #fff;
+    padding-left: 0.6rem;
+    font-size: x-small;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-details h4 {
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-top: 0.6rem;
+    color: #fff;
+}
+
+      .carousel-with-img img {
+        width: 20%;
+        margin-bottom: -1.5rem;
+        height: 100%;
+        margin-right: 0.6rem;
+        background-color: #ffffff;
+        border-radius: 0.2rem;
+        border: 1.1px solid #ffffff;
+      }
+
+      .carousel-image{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* width: 20%; */
+        background-color: white;
+        /* height: 50px; */
+        /* position: absolute; */
+        /* right: 0.75rem; */
+        /* top: 3.6rem; */
+        border: 0.3px solid white;
+        border-radius: 5px;
+      }
+
+
+
+      .testimonial-card {
+        box-shadow: 0px 0px 5px 1px #88888826;
+        border-radius: 0.3rem;
+      }
+
+
+
+/* ***********carousel section ends*********** */
+
+
+
+
+
+
+/* ****************mainPage*********************** */
+
+
+
+/* ************mainpage-header-section-start*********** */
+
+.mainPage-header-section {
+    background-color: #FFF3E5;
+    height: 58vh;
+    position: relative;
+    width: 100%;
+    background-image: url('../assets/page1background3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: left;
+}
+
+/* ********media query for mobile view backgrouung image******* */
+
+
+@media (max-width:576px){
+    .mainPage-header-section{
+        height: 25vh;
+    }
+}
+
+@media (max-width:320px){
+    .mainPage-header-section{
+        height: 28vh;
+    }
+}
+
+
+
+
+.mainPage-header-section::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: black;
+    opacity: 0.1;
+    z-index: -1;
+    
+}
+
+
+
+.mainpage-header-center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    /* color: #fff; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mainpage-header-center-div h1 {
+    font-weight: 700;
+}
+
+.mainpage-header-center-div p,h1 {
+    margin-bottom: 0;
+}
+
+.mainpage-header-center-div p {
+    font-size: x-large;
+}
+
+.leaf-container {
+    top: 78%;
+    padding-left: 1rem;
+}
+
+
+/* 
+#topheader::after {
+    position: absolute;
+    content: '';
+    left: 49%;
+    width: 36px;
+    height: 0.1rem;
+    border-radius: 2px;
+    background: #fff;
+  }
+ */
+
+
+
+/* ************mainpage-header-section-ends*********** */
+
+
+/* main { */
+    /* max-width: 780px; */
+    /* background-color: #cdc4ff38; */
+    /* padding: 40px;
+    margin: 0 auto;
+    margin-top: -100px; */
+/* } */
+.main-container {
+    box-shadow: 0px 0px 7px 0px #00000026;
+    border-radius: 18px;
+    margin-top: -6rem;
+    /* overflow: visible; */
+    position: relative;
+    background-color: #ffffff;
+    /* z-index: 2; */
+}
+
+.main-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0rem 2.5rem;
+}
+
+.postcode-restaurant-button {
+    padding: 1rem 0rem 1rem 1.5rem;
+    background-color: #F8F8F8;
+    color: #464B4D;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 8px;
+    text-align: start;
+    font-size: 0.9rem;
+    border: 1px solid #DDDDDD;
+    
+}
+
+.postcode-restaurant-button::after {
+    content: none;
+}
+
+.postcode-restaurant-button i {
+    color: #FD451D;
+    font-size: large;
+    padding-right: 0.6rem;
+}
+
+.select-cuisine-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1.5rem;
+    text-align: start;
+    background-color: #F8F8F8;
+    color: #464B4D;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #DDDDDD;
+
+
+
+    
+}
+.find-restaurant-button {
+    padding: 0.9rem 0rem 0.9rem 0rem;
+    border-radius: 8px;
+    background-color: #FD451D !important;
+    color: #FFFFFF !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+
+.tab-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+
+}
+
+.main-navigation-tab li {
+    padding: 0.5rem;
+}
+
+.main-navigation-tab li:hover {
+    border-bottom: 1px solid #FD451D;
+}
+
+.main-navigation-tab li a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-navigation-tab li:first-child a {
+    color: #FD451D;
+}
+
+.main-navigation-tab li:last-child a {
+    color: #464B4D;
+}
+/* 
+#main-navigation-tab-order:active {
+    border-bottom: 1px solid black;
+} */
+
+/* .main-button-find-restaurant {
+    width: 60%;
+}
+
+.main-button-select-cuisine {
+    padding-right: 3rem;
+}
+
+.main-button-postcode-restaurant {
+    padding-right: 2rem;
+} */
+
+
+/* *******page2sidebar and right bar-start******** */
+
+.right-bar {
+    display: grid;
+    grid-template-columns: 30vw auto;
+    /* background-color: brown; */
+}
+
+/* .sidebar {
+    position: relative;
+    width: 30vw;
+    background-color: blue;
+    margin-left: 10rem;
+} */
+
+.right-bar-main {
+    grid-column-start: 2;
+    background-color: #ff00000d;
+}
+
+
+
+
+
+/* *******page2sidebar and right bar-ends******** */
+
+
+
+/* *************page2-sidebar-left-panel-start****************** */
+
+
+.left-panel {
+    background-color: white;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+} 
+
+
+.left-panel-main {
+    margin-top: 11%;
+}
+
+.left-panel-main .search h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.4rem;
+}
+
+.search-input input,.search-input div span {
+    background-color: #F4F4F1;
+    border-radius: 5px;
+}
+
+
+
+.filter-by,.service , .cuisine {
+    margin-top: 1.5rem;
+}
+
+.filter-by h4 , .service h4, .cuisine h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+
+/* *************page2-sidebar-left-panel-ends****************** */
+
+
+
+
+
+
+
+
+
+
+/* ***************testing******************** */
+
+/* body {
+    background: #599fd9;
+    background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
+    min-height: 100vh;
+    overflow-x: hidden;
+  } */
+   .vertical-nav {
+    min-width: 30vw;
+    width: 30vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  /* .page-content { */
+    /* width: calc(100%); */
+    /* margin-left: 0rem; */
+    /* transition: all 0.4s; */
+  /* }  */
+  
+  #sidebar.active {
+    margin-left: -30vw;
+    /* margin-right: -10rem; */
+    /* left: -20rem; */
+    /* display: none; */
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+
+  #rightBar.active {
+      grid-template-columns: 0vw auto;
+      transition: all 4s;
+
+  }
+
+
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-gray {
+    color: #aaa;
+  }
+  .nav-link{
+      text-transform: capitalize;
+  }
+  /* .nav-link:hover{
+      background:#f3f2f2;
+  } */
+  .text-primary{
+      color:#7579e7 !important;
+  }
+
+
+
+
+
+  @media (max-width: 768px) {
+
+    .right-bar {
+        grid-template-columns: 0vw auto;
+    }
+    .sidebar {
+        display: none;
+    }
+      
+    /* #rightBar.active {
+        grid-template-columns: 0vw auto;
+        transition: all 0.4s;
+
+    } */
+    
+    /* #sidebar {
+      margin-left: -30vw;
+    } */
+    /* #sidebar.active {
+      margin-left: -30vw;
+    } */
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    /* #content.active { */
+      /* margin-left: 30vw; */
+      /* width: calc(100%); 
+    } */
+  }
+/*   
+  
+  @media (max-width: 425px) {
+
+
+    #rightBar {
+        margin-left: -30vw;
+
+    }
+    #rightBar.active {
+        grid-template-columns: 60vw auto;
+        transition: all 0.4s; */
+        /* margin-left: 0vw; */
+/* 
+    }
+    #content {
+        width: 100%;
+        margin: 0;
+      }
+      #content.active { */
+        /* margin-left: 30vw; */
+        /* width: calc(100%); 
+      }
+
+}     */
+
+/* ***************testing******************** */
+
+
+
+
+/* **********************SignUp Modal starts************ */
+.modal-title-header {
+    font-family: 'Nunito', sans-serif;
+    color: #6D7778;
+    font-weight: 500;
+    font-size: inherit;
+    padding: 0.8rem 0.5rem 0.3rem 2rem;
+
+}
+
+.modal-title-header a {
+    color: #EE3E35;
+}
+
+.modal-body {
+    padding: 1rem 2rem 1rem 2rem;
+    
+}
+.modal-content {
+    border-radius: 20px;
+    max-width: 450px;
+
+}
+
+.modal-header, .modal-footer {
+    border: none;
+    justify-content: center;
+
+}
+
+.modal-header, .modal-body {
+    padding-bottom: 0;
+}
+
+.signUp-modal-header {
+    font-size: small;
+}
+
+
+
+
+.get-started-modal-header {
+    color: black;
+}
+
+.modal-footer {
+    padding: 2rem 2rem;
+    padding-top: 0.5rem;
+}
+
+.modal-footer a {
+    width: -webkit-fill-available;
+}
+
+.modal-footer a:first-child button {
+    color: #FFFFFF;
+    background-color: #EE3E35;
+    /* border-color: #707070; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.modal-footer a:last-child button {
+    background-color: #F9F9F9;
+    color: #EE3E35;
+    border-color: #EE3E35;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-control{
+    box-shadow: 0px 0px 3px 1px #00000014;
+    font-family: 'Nunito', sans-serif;
+    font-size: small;
+}
+
+
+/* 
+@media (max-width:1024px){
+    .modal-content {
+        max-width: 385px;
+    }
+} */
+
+
+
+/* **********************SignUp Modal ends************ */
+
+
+/* ********************signIn Model Start**************** */
+.forgot-password a button {
+    border: none;
+    color: #EE3E35;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    padding-right: 0;
+}
+
+.check-password-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+
+/* ********************signIn Model end**************** */
+
+
+
+
+
+
+/* **************page2 right-panel-start************** */
+
+.right-panel-heading {
+    display: flex;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.right-panel-home-takeaway {
+    padding-top: 0.7rem;
+    
+}
+
+.right-panel-home-takeaway h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+.right-panel-home-takeaway h6:first-child {
+    color: #334A4C;
+
+}
+
+/* **************page2 right-panel-end************** */
+
+
+/* **************page2 right-panel-card-start************** */
+.right-panel-food-details-card {
+    /* width: 80%; */
+    /* width: 46%;
+    height: 29vh; */
+    background-color: #FFFFFF;
+
+    padding: 0.9rem;
+    margin: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0.2px #88888880;
+    border: 1px solid #80808047;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 36% auto;
+}
+
+/* .right-panel-food-details-card-image {
+    background-color: #0000ff2b;
+} */
+.right-panel-food-details-card-image img {
+    width: 100%;
+    height: 100%;
+    /* padding: 0.1rem; */
+    border-radius: 7px;
+
+}
+.right-panel-food-details-card-content {
+    /* background-color: #8a2be221; */
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+
+}
+
+.right-panel-card-content-heading, .right-panel-card-content-description, .right-panel-card-content-address, .right-panel-card-content-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5rem;
+
+}
+
+.right-panel-card-content-heading, .right-panel-card-content-buttons {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-panel-card-content-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+.right-panel-card-content-heading h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    color: #737680;
+
+}
+.right-panel-card-content-heading h2,h4 {
+    margin: 0;
+}
+
+.right-panel-card-content-description {
+    padding: 0.3rem 0rem;
+}
+.right-panel-card-content-description p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    color: #4A4A4A;
+
+}
+
+.right-panel-card-content-address {
+    padding: 0.3rem 0rem;
+}
+.right-panel-card-content-address p {
+    font-family: 'Poppins', sans-serif;
+    color: #4A4A4A;
+    font-size: 0.7rem;
+    align-items: center;
+    font-weight: 500;
+    display: flex;
+
+}
+
+.right-panel-card-content-address i, p {
+    margin: 0;
+}
+
+.right-panel-card-content-address i {
+    color: #FD451D;
+    font-size: 1.5rem;
+    padding-right: 0.4rem;
+
+}
+
+.right-panel-card-content-buttons {
+    padding: 0.4rem 0rem 0rem 0rem;
+}
+
+.right-panel-card-content-buttons button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-color: transparent;
+    color: #FFFFFF !important;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: 0.7rem;
+}
+
+
+/* **************page2 right-panel-card-end************** */
+
+
+
+
+/* *****************page3 starts***************** */
+
+/* ***********************simple header section starts *********************** */
+
+.simpleheader {
+    background-image: none;
+    background-color: #313B4A;
+    height: 100%;
+    
+}
+
+.simple-header-card {
+    margin: 0;
+    padding: 0;
+    background-color: #313B4A;
+    box-shadow: none;
+    border: none;
+}
+
+.simple-header-image {
+    padding: 1.5rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.simple-header-image img {
+    width: 85% !important;
+}
+
+.simple-header-card-right-panel {
+    padding: 2.5em 1.5rem 2.5rem 0rem;
+}
+
+.simple-header-card-rating p {
+    font-size: x-small;
+    color: #ffffff94;
+    font-family: 'Nunito', sans-serif;
+}
+
+.simple-header-card-rating h6 {
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+    justify-content: flex-start;
+    display: flex;
+    margin: 0;
+    font-size: small;
+}
+.simple-header-card-rating i {
+    color: #FFFFFF;
+}
+
+.right-panel-card-content-heading h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: x-large;
+    
+}
+
+.flex-for-mobile-first, .flex-for-mobile-second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 47.5%;
+}
+
+@media (max-width:768px) {
+    .right-panel-card-content-heading h1 {
+        font-size: medium;
+    }
+    .simple-header-address p {
+        font-size: smaller !important;
+    }
+    .simple-header-card-rating h6 {
+        font-size: x-small;
+    }
+    .right-panel-food-details-card {
+        grid-template-columns: 30% auto;
+    }
+    .simple-header-image {
+        padding: 0.5rem;
+        /* padding-bottom: 2rem; */
+    }
+    .right-panel-card-content-heading, .right-panel-card-content-description, .right-panel-card-content-address, .right-panel-card-content-buttons {
+        margin-left: 0%;
+    }
+    .simple-header-card-right-panel {
+        padding: 0.5em 0rem 0.5rem 0rem;
+    }
+    .simple-header-card-rating {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-for-mobile-first, .flex-for-mobile-second {
+        width: 100%;
+        justify-content: unset;
+    }
+    .simple-header-rating, .simple-header-time, .simple-header-min-order, .simple-header-opening-hours {
+        width: 50%;
+        text-align: left;
+    }
+    .rating i {
+        font-size: smaller;
+    }
+    .simple-header-card-rating p {
+        font-size: xx-small;
+    }
+    .simple-header-right-card-content {
+        padding: 0rem 1.5rem 0.5rem 1rem !important;
+    }
+    .place-order-details {
+        padding: 0rem 1rem !important;
+    }
+}
+
+
+
+
+.simple-header-address p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: medium;
+    color: #ffffff;
+    font-weight: 400;
+    padding-left: 0.4rem;
+}
+
+
+.simple-header-right-card-social-links ul li a i {
+    border: 1px solid #FA651D;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+    background-color: #FA651D;
+    color: white;
+}
+
+.simple-header-right-card-social-links ul li a .fa-facebook::before, .simple-header-right-card-social-links ul li a .fa-pinterest-p::before{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.simple-header-right-card-social-links ul li {
+    padding: 0.15rem;
+}
+
+.simple-header-right-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5em 1.5rem 2.5rem 0rem;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.simple-header-right-card-heading p {
+    padding-left: 0;
+}
+
+/* ***********************simple header section ends *********************** */
+
+/* ********************page3 right-panel-section-start******************** */
+
+.right-panel-btn-padding {
+    padding: 0.375rem 1.5rem;
+}
+
+.right-panel-last-btn-padding {
+    padding: 0.375rem 2.5rem;
+}
+
+
+.right-panel-model-footer a button {
+    background-color: #FD451D !important;
+    border-color: #707070 !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: #FFFFFF !important;
+    border-radius: 8px;
+    padding: 0.375rem 2rem;
+
+}
+
+.right-panel-card-content-buttons button:first-child, .right-panel-card-content-buttons button:last-child {
+    /* background-color: #F9F9F9; */
+    color: #FD451D;
+    border-color: #FD451D;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ********************page3 right-panel-section-ends******************** */
+
+/* *****************new-arrival-area-starts************ */
+.new-arrival {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.new-arrival-card {
+    display: grid;
+    grid-template-columns: 36% auto;
+    padding-top: 1rem;
+}
+
+.new-arrival-card-img img {
+    width: 100%;
+    height: 100%;
+    /* padding: 0.1rem; */
+    border-radius: 7px;
+}
+
+.new-arrival-card-detail {
+    padding: 0.5em 0.5rem 0.5rem 1rem;
+
+}
+
+.new-arrival-card-heading h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: medium;
+}
+
+.new-arrival-card-price h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.new-arrival-heading h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* *****************new-arrival-area-ends************ */
+
+
+/* *****************page3 ends***************** */
+
+
+
+
+/* ************place-order-module-starts********* */
+
+.place-order {
+    background-color: #F8F8F8;
+    padding-bottom: 2rem;
+
+}
+
+.address-card, .payment-card {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+.address-card-modal-header {
+    padding: 0rem 0rem 0rem 1rem;
+    color: #2A2522;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.address-card-modal-header-button {
+    background-color: transparent !important;
+}
+
+.address-card-modal-header-button span i {
+    font-size: small;
+}
+
+.address-card-body {
+    padding: 0rem 2rem 1.5rem 2rem;
+    color: #2B3233;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: small;
+}
+
+.payment-card-modal-header {
+    justify-content: flex-start;
+}
+
+/* input[type="month"]::before{
+  content: attr(placeholder) !important;
+  color: #aaa;
+  width: 100%;
+}
+
+input[type="month"]:focus::before,
+input[type="month"]:active::before {
+  content: "";
+  width: 0%;
+} */
+
+
+
+.payment-card-buttons {
+    padding: 0.4rem 0rem 0rem 0rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-card-buttons button:first-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-color: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: 0.7rem;
+    /* padding: 0.375rem 1.5rem; */
+    
+}
+.payment-card-buttons button {
+    background-color: #ffffff;
+    color: #FD451D;
+    border-color: #FD451D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    border-radius: 8px;
+
+    /* padding: 0.375rem 1.5rem; */
+}
+
+.payment-card-input-span {
+    box-shadow: 0px 0px 3px 1px #00000014;
+    font-family: 'Nunito', sans-serif;
+    font-size: small;
+}
+
+.payment-card-input-span button {
+    background-color: #ffffff;
+}
+.payment-card-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.payment-card-checkbox label {
+    font-family: 'Nunito', sans-serif;    
+}
+
+.payment-card-pay-button button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-color: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: 0.7rem;
+    padding: 0.375rem 2.4rem;
+
+}
+
+
+/* ********bill details module starts********* */
+.order-details-feast-iftar-box, .bill-details-box  {
+    display: flex;
+    flex-direction: column;
+}
+
+.feast-iftar-box-heading, .coupon, .bill-details-item, .bill-details-delivery, .bill-details-taxes, .bill-details-total {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.order-details-feast-iftar-box, .bill-details-box, .coupon  {
+    padding-top: 1.5rem;
+}
+
+.order-details-feast-iftar-box h3, .feast-iftar-box {
+    border-bottom: 0.5px solid #7070702e;    
+}
+
+.coupon .form-group {
+    width: 55%;
+}
+
+
+.order-details-feast-iftar-box h3 {
+    color: #FD451D;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.feast-iftar-box-heading .btn-group button {
+    padding: 0rem 0.7rem;
+    color: #FD451D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: small;
+    background-color: #FFFFFF;
+}
+
+.feast-iftar-box-heading h5 {
+    color: #0F0F0F;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    margin: 0;
+}
+
+.feast-iftar-box-details p {
+    color: #0F0F0F;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: small;
+}
+
+.feast-iftar-box {
+    padding: 0.5rem 0rem;
+}
+
+.coupon-apply-button button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-color: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: 0.7rem;
+    padding: 0.375rem 2.4rem;
+}
+
+.bill-details-box h3 {
+    color: #0F0F0F;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bill-details-item p:first-child, .bill-details-delivery p:first-child, .bill-details-taxes p:first-child, .bill-details-total p:first-child {
+    color: #0F0F0F;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: small;
+}
+.bill-details-item p:last-child, .bill-details-delivery p:last-child, .bill-details-taxes p:last-child, .bill-details-total p:last-child {
+    color: #0F0F0F;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: small;
+    font-weight: 500;
+}
+
+.bill-details-item, .bill-details-delivery, .bill-details-taxes, .bill-details-total {
+    padding: 0.5rem 0rem;
+}
+
+.bill-details-taxes {
+    border-bottom: 0.5px solid #70707066;    
+    border-top: 0.5px solid #70707066;    
+}
+
+.bill-details-total p {
+    font-size: medium !important;
+}
+
+.feast-iftar-box-food-width {
+    width: 100%;
+}
+
+.feast-iftar-box-price-width {
+    width: 75%;
+}
+
+.place-order-details {
+    padding-left: 3rem;
+}
+
+@media (max-width:768px) {
+    .place-order-details {
+        padding-left: 0rem;
+    }
+
+}
+
+
+/* ********bill details module ends********* */
+
+/* ************place-order-module-ends********* */
+
+
+
+/* ************edit-profile-module-starts************ */
+
+.right-panel-edit-profile {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.right-panel-edit-profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-panel-edit-profile-email {
+    display: flex;
+}
+
+.edit-profile-email {
+    display: flex;
+    align-items: flex-end;
+}
+
+.left-panel-edit-profile {
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.edit-profile-button button {
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-color: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: small;
+    padding: 0.3rem 1.9rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.edit-profile-name h3, .edit-profile-number h5, .edit-profile-email h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.edit-profile-number h5, .edit-profile-email h5 {
+    font-weight: 600;
+}
+
+.edit-profile {
+    background-color: #F8F8F8;
+    padding-bottom: 2rem;
+}
+
+.edit-profile-card {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2rem 2rem 1rem 0rem;
+}
+
+.edit-profile-card .modal-content {
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 0px #8888885e;
+    border: none;
+
+}
+
+.edit-profile-order, .edit-profile-payment, .edit-profile-address {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.edit-profile-order i, .edit-profile-payment i, .edit-profile-address i {
+    padding-right: 0.8rem;
+    color: #A65F43;
+
+}
+
+.edit-profile-order p, .edit-profile-payment p, .edit-profile-address p {
+    font-family: 'Mulish', sans-serif;
+    font-size: small;
+}
+
+.past-order {
+    margin-top: 2rem;
+
+}
+
+.past-order-heading h5 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FD451D;
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 0.8rem;
+}
+
+
+@media (max-width:426px){
+    .edit-profile-card {
+        padding: 0;
+    }
+    .edit-profile-card .modal-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 0.5rem;
+    }
+    .past-order {
+        margin-top: 0.5rem;
+    }
+    .edit-profile-past-order-card {
+        grid-template-columns: none !important;
+    }
+    .card-content-time i {
+        padding-left: 0.2rem;
+        font-size: small;
+    }
+    .past-order-card-content-item p, .past-order-card-content-price p, .past-order-card-content-order p {
+        font-size: small !important;
+    }
+    .right-panel-edit-profile {
+        grid-template-columns: none;
+    }
+    .left-panel-edit-profile {
+        justify-content: unset;
+    }
+}
+
+
+
+
+
+
+
+
+/* ****************edit-profile-past-order-card-starts************* */
+@media (min-width:426px){
+
+.class-for-sticky {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+}
+.past-order-card {
+    width: 100%;
+}
+
+.edit-profile-past-order-card {
+    background-color: #FFFFFF;
+    padding: 0.9rem;
+    margin: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0.2px #88888880;
+    border: 1px solid #80808047;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.edit-profile-past-order-card-image img {
+    width: 100%;
+    height: 100%;
+    /* padding: 0.1rem; */
+    border-radius: 7px;
+}
+
+.edit-profile-past-order-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+
+}
+
+.past-order-card-content-heading, .past-order-card-content-buttons {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.past-order-card-content-heading, .past-order-card-content-description, .past-order-card-content-address, .past-order-card-content-order-and-button , .past-order-card-content-item-and-price{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5rem;
+    padding: 0.3rem 0rem;
+}
+
+.past-order-card-content-description, .past-order-card-content-address {
+    padding: 0.3rem 0rem;
+}
+
+.past-order-card-content-heading h2, h4 {
+    margin: 0;
+}
+
+.past-order-card-content-heading h2 {
+    font-size: medium;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #0F0F0F;
+    font-weight: 700;
+}
+
+.past-order-card-content-heading h4 {
+    font-size: small;
+    color: #4A4A4A;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.past-order-card-content-description p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-small;
+    color: #4A4A4A;
+}
+
+.past-order-card-content-address i,p {
+    margin: 0;
+}
+
+.past-order-card-content-address i {
+    color: #FD451D;
+    font-size: 1.5rem;
+    padding-right: 0.4rem;
+}
+
+.past-order-card-content-address p {
+    font-family: 'Poppins', sans-serif;
+    color: #4A4A4A;
+    font-size: x-small;
+    align-items: center;
+    /* font-weight: 500; */
+    display: flex;
+
+}
+
+/* .past-order-card-content-prder-and-button button:first-child {
+} */
+
+.past-order-card-content-order-and-button button {
+    border-color: #FD451D;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    /* border-color: transparent; */
+    color: #FFFFFF !important;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: 0.7rem;
+    padding: 0.375rem 1.2rem;
+}
+
+.card-content-time {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-content-time i {
+    padding-left: 1rem;
+    color: #FC451D;
+    font-size: large;
+}
+
+.past-order-card-content-item-and-price, .past-order-card-content-order-and-button {
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: space-between;
+}
+
+.past-order-card-content-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.past-order-card-content-item i {
+    color: #FD451D;
+    font-size: medium;
+    padding-right: 0.4rem;
+}
+
+.past-order-card-content-item p, .past-order-card-content-price p , .past-order-card-content-order p  {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4A4A4A;
+    font-size: medium;
+}
+
+/* ****************edit-profile-past-order-card-ends************* */
+
+
+/* ************edit-profile-module-ends************ */
+
+
+
+/* **********reservation-food-order-area-starts********** */
+
+.reservation-food-order-heading {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.reservation-food-order-heading-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0.8rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0rem 0rem 0rem;
+    width: 100%;
+}
+
+.reservation-food-order-heading-buttons button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-color: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: 0.7rem;
+}
+
+
+.reservation-food-order-heading-buttons button:first-child, .reservation-food-order-heading-buttons button:last-child {
+    background-color: #F9F9F9;
+    color: #FD451D;
+    border-color: #FD451D;
+}
+
+.reservation-food-order-card {
+    padding: 1.5rem;
+}
+
+.reservation-order, .delicious-food {
+    background: linear-gradient(
+        90deg
+        , #FFF 30%, #F8F8F8 30%);}
+
+.reservation-food-order, .right-panel-cards-frame {
+    background-color: #F8F8F8;
+}
+
+.combo-package {
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.combo-package img {
+    padding: 0rem 3rem 0rem 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:426px){
+    .new-arrival-card {
+        grid-template-columns: 20% auto;
+    }
+    .combo-package img {
+        width: 47%;
+    }
+    .right-panel-food-details-card-content {
+        padding-left: 0.7rem !important;
+    }
+}
+
+
+/* **********reservation-food-order-area-ends********** */
+
+/* *****category-card-starts********** */
+.category {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.category-heading h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.category-item {
+    padding: 0.15rem 0rem;
+}
+
+.category-item p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.collection, .play-store {
+    background-color: #FFF;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+
+}
+
+.my-cart {
+    background-color: #FFF;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.order-details {
+    padding: 1.5rem;
+} */
+
+.appetizer-box {
+    padding: 1rem 0rem;
+}
+
+.grilled-tandoori-dishes .order-details-feast-iftar-box h3 {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.grilled-tandoori-dishes .order-details-feast-iftar-box p {
+    border-bottom: 0.5px solid #7070702e;
+    padding-bottom: .3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: medium;
+}
+
+.play-store-para {
+    padding: 0.3rem 0rem;
+}
+
+.play-store-para p {
+    color: #0F0F0F;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: small;
+}
+
+.play-store-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.play-store-links a img {
+    width: 100%;
+}
+
+.play-store-img img {
+    width: 100%;
+}
+
+
+.my-cart-heading {
+    border-bottom: 1px solid #7070702e;
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.my-cart-heading h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+.my-cart-checkout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+
+}
+
+.my-cart-checkout button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-color: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #FD451D;
+    font-size: 0.7rem;
+}
+
+.my-cart-content {
+    width: 100%;
+}
+
+.my-cart-item, .my-cart-subtotal, .my-cart-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 0.5rem 0rem; */
+}
+
+.my-cart-item p, .my-cart-subtotal p, .my-cart-total p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: small;
+}
+
+.my-cart-total p {
+    font-weight: bold;
+}
+
+.my-cart-price p, .my-cart-subtotal-price p {
+    font-weight: 500;
+}
+
+.my-cart-subtotal {
+    margin-top: 1rem;
+}
+
+
+.my-cart-total {
+    margin-bottom: 1rem;
+}
+
+.my-cart-item {
+    padding-top: 0.4rem;
+}
+
+.collection-sticky {
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    background-color: #F8F8F8;
+}
+
+@media (max-width:426px){
+    .reservation-order, .delicious-food {
+        background: linear-gradient(90deg, #FFF 100%, #F8F8F8 30%);
+    }
+    .feast-iftar-box-heading h5 {
+        font-size: smaller;
+    }
+    .grilled-tandoori-dishes .order-details-feast-iftar-box p {
+        font-size: smaller;
+    }
+    .order-details-feast-iftar-box h3 {
+        font-size: large;
+    }
+    .feast-iftar-box-details p {
+        font-size: smaller;
+    }
+    .feast-iftar-box-heading .btn-group button {
+        font-size: smaller;
+    }
+    .category-heading h4 {
+        font-size: large;
+    }
+    .category-item p {
+        font-size: x-small;
+    }
+}
+
+.iftar-box , .appetizers, .grilled-tandoori-dishes {
+    padding: 1rem;
+}
+
+/* *****category-card-ends********** */
